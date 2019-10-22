@@ -6,6 +6,8 @@ body {
 .nav {
     background-color: #636E72;
     display: flex;
+    padding: 20px;
+    
 
     h1{
         font-size: 30px;
@@ -14,34 +16,69 @@ body {
     }
 
     nav {
-        display: flex;
-        justify-content: flex-end;
+        font-size: 1.8rem;
+        width: 60%;
 
-        a {
+        ul{
+            padding: 1% 0;
             
-            text-decoration: none;
-            padding: 2% 0;
-            font-size: 15px;
+
+            li{
+                display: flex;
+                justify-content: flex-end;
+                
+            }
+
+            a { 
+                text-decoration: none;
+                margin-right: 30px;
+            }   
         }
     }
 }
 
 .main {
     background-color: #74B9FF;
-    .flex();
+    
+    .image {
+        background-image: image();
+    }
 
-    img {
-        width: 400px;
-        height: 300px;
-        border-radius: 50%;
-        border: 5px solid grey;
+    .intro {
+        width: 50%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h1{
+            font-size: 4rem;
+            color: white;
+            border: 1px solid black;
+        }
+
+        h2{
+            font-size: 2rem;
+            border: 1px solid black;
+        }
+
+        p{
+            font-size: 2rem;
+            border: 1px solid black;
+        }
     }
 
     button {
+        justify-content: center;
         background-color: #FFFA7A;
+        border: 1px solid black;
+        font-size: 2rem;
+        margin: 0 170px;
+        padding: 10px;
     }
 }
 
 footer {
     background-color: #FFAD72;
+    padding: 20px;
 }
